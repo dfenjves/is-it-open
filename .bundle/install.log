@@ -1,0 +1,27 @@
+# Logfile created on 2014-03-01 14:07:49 -0500 by logger.rb/44203
+I, [2014-03-01T14:07:49.670202 #40090]  INFO -- : 0:  i18n (0.6.9) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/i18n-0.6.9.gemspec
+I, [2014-03-01T14:07:49.670441 #40090]  INFO -- : 0:  minitest (4.7.5) from /Users/danielfenjves/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/specifications/default/minitest-4.7.5.gemspec
+I, [2014-03-01T14:07:49.670645 #40090]  INFO -- : 0:  multi_json (1.8.4) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.8.4.gemspec
+I, [2014-03-01T14:07:49.670847 #40090]  INFO -- : 0:  atomic (1.1.15) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/atomic-1.1.15.gemspec
+I, [2014-03-01T14:07:49.671043 #40090]  INFO -- : 0:  thread_safe (0.2.0) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/thread_safe-0.2.0.gemspec
+I, [2014-03-01T14:07:49.671237 #40090]  INFO -- : 0:  tzinfo (0.3.38) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/tzinfo-0.3.38.gemspec
+I, [2014-03-01T14:07:49.671431 #40090]  INFO -- : 0:  activesupport (4.0.3) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/activesupport-4.0.3.gemspec
+I, [2014-03-01T14:07:49.671613 #40090]  INFO -- : 0:  builder (3.1.4) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/builder-3.1.4.gemspec
+I, [2014-03-01T14:07:49.671807 #40090]  INFO -- : 0:  activemodel (4.0.3) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/activemodel-4.0.3.gemspec
+I, [2014-03-01T14:07:49.671999 #40090]  INFO -- : 0:  activerecord-deprecated_finders (1.0.3) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/activerecord-deprecated_finders-1.0.3.gemspec
+I, [2014-03-01T14:07:49.672192 #40090]  INFO -- : 0:  arel (4.0.2) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/arel-4.0.2.gemspec
+I, [2014-03-01T14:07:49.672389 #40090]  INFO -- : 0:  activerecord (4.0.3) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/activerecord-4.0.3.gemspec
+I, [2014-03-01T14:07:49.672584 #40090]  INFO -- : 0:  backports (3.6.0) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/backports-3.6.0.gemspec
+I, [2014-03-01T14:07:49.672764 #40090]  INFO -- : 0:  coderay (1.1.0) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/coderay-1.1.0.gemspec
+I, [2014-03-01T14:07:49.672955 #40090]  INFO -- : 0:  method_source (0.8.2) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/method_source-0.8.2.gemspec
+I, [2014-03-01T14:07:49.673145 #40090]  INFO -- : 0:  slop (3.4.7) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/slop-3.4.7.gemspec
+I, [2014-03-01T14:07:49.673340 #40090]  INFO -- : 0:  pry (0.9.12.6) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/pry-0.9.12.6.gemspec
+I, [2014-03-01T14:07:49.673532 #40090]  INFO -- : 0:  rack (1.5.2) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-03-01T14:07:49.673728 #40090]  INFO -- : 0:  rack-protection (1.5.2) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-03-01T14:07:49.673908 #40090]  INFO -- : 0:  rack-test (0.6.2) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-03-01T14:07:49.674103 #40090]  INFO -- : 0:  tilt (1.4.1) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-03-01T14:07:49.674299 #40090]  INFO -- : 0:  sinatra (1.4.4) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-03-01T14:07:49.674493 #40090]  INFO -- : 0:  sinatra-contrib (1.4.2) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/sinatra-contrib-1.4.2.gemspec
+I, [2014-03-01T14:07:49.674684 #40090]  INFO -- : 0:  sinatra-reloader (1.0) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/sinatra-reloader-1.0.gemspec
+I, [2014-03-01T14:07:49.674878 #40090]  INFO -- : 0:  sqlite3 (1.3.9) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0/specifications/sqlite3-1.3.9.gemspec
+I, [2014-03-01T14:07:49.675051 #40090]  INFO -- : 0:  bundler (1.5.1) from /Users/danielfenjves/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
