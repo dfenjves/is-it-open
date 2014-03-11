@@ -1,13 +1,13 @@
-class Museum
-	attr_reader :yelp_object, :name, :schedule, :week_hash
+class Museum < ActiveRecord::Base
 
-	def initialize(yelp_object)
+	attr_reader :schedule, :week_hash, :yelp_object
+
+	def new_museum_from_yelp(yelp_object)
 		@yelp_object = yelp_object
-		@name = yelp_object.name
+		self.name = @yelp_object.name
 		@schedule = yelp_object.schedule
-		binding.pry
 		set_week_hash
-		set_times(:wednesday)
+		save_weeks_data
 	end
 
 	def set_week_hash
@@ -24,21 +24,36 @@ class Museum
 
 	def set_times(day)
 		if week_hash[day] == "Closed"
-			"Closed"
+			open = "Closed"
+			close = "Closed"
 		else
 			opening_string = week_hash[day].split(" - ")[0]
-			t = Time.new(2000,1,1,(opening_string[0..1].to_i),(opening_string[3..4].to_i))
-			@open = t.strftime("%H:%M")
+			t = Chronic.parse(opening_string)
+			open = t.strftime("%H:%M")
 			closing_string = week_hash[day].split(" - ")[1]
-			p = Time.new(2000,1,1,(closing_string[0..1].to_i+12),(closing_string[3..4].to_i))
-			@close = p.strftime("%H:%M")
+			p = Chronic.parse(closing_string)
+			close = p.strftime("%H:%M")
+		end
+		self.send("#{day.to_s}_open=", open)
+		self.send("#{day.to_s}_close=", close)
+		self.save
+	end
+
+	def save_weeks_data
+		week_hash.each do |day_name, schedule|
+			set_times(day_name)
 		end
 	end
 
-	def monday_times
+	def current_status
+		temp = CheckIfOpen.new(self.id)
+		if temp.is_open?
+			"Open"
+		else
+			"Closed"
+		end
 
 	end
-	
-	def tuesday_times
-	end
+
+
 end

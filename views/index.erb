@@ -1,0 +1,7 @@
+
+<ul>
+<%@museums.each do |museum|%>
+	<a href="<%=museum.url%>"><div><%=museum.name%> - <%=museum.current_status%></div></a>
+<%end%>
+</ul>
+

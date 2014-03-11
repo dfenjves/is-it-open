@@ -7,9 +7,13 @@ gem 'pry'
 # gem 'sinatra'
 # gem 'sinatra-contrib'
 # gem 'sinatra-reloader'
-# gem 'activerecord', :require => "active_record"
-# gem 'sqlite3'
+gem 'activerecord', :require => "active_record"
+gem 'sqlite3'
 
-require 'rubygems'
-require 'nokogiri'
+# gem 'rubygems'
+gem 'nokogiri'
 require 'open-uri'
+gem 'chronic'
+gem 'rspec'
+require 'CSV'
+gem 'sinatra-activerecord'

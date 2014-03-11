@@ -1,23 +1,13 @@
 require_relative '../config/environment'
 
-moma_html = open("http://www.yelp.com/biz/museum-of-the-moving-image-astoria",
-   "User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36")
-moma = Nokogiri::HTML(moma_html)
+	# Museum.each dorak
 
-today_schedule = moma.css("span.hour-range").text
 
-full_schedule = moma.css("table.table.table-simple.hours-table td")
 
-clean_schedule = full_schedule.collect {|item| item.text}
 
-schedule_array = []
 
-clean_schedule.collect do |sched|
-	if sched.match(/Closed|am|pm/)
-		schedule_array << sched.gsub("\n", "").strip
-	end
-end
-
+	list = DBPopulator.new("db/seed_data.csv")
+	list.populate_db
 
 
 

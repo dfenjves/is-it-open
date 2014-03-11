@@ -30,7 +30,7 @@ class YelpScraper
 			end
 		end
 
-		@schedule = schedule_array
+		@schedule = schedule_array.delete_if { |item| item if item.match(/Closed now| Open now/)}
 	end
 
 
