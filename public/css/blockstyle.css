@@ -47,6 +47,7 @@ h2 {
 	color: #d4d3c0;
 	line-height: 0.9;
 	letter-spacing: -0.05em;
+	display: block
 }
 h3 {
 	color: #3b7cbf;
@@ -71,7 +72,7 @@ a p {
 
 a:hover p {
 	display:block;
-
+	padding-top: 20px;
 }
 
 /* Media Queries */

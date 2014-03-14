@@ -20,4 +20,5 @@ require_relative '../controllers/museums_controller'
 #   :encoding => 'utf8'
 # )
 
-ActiveRecord::Base.establish_connection('postgres://kczptvfljneali:nXpOWy8jaeZltPWpMeC-2DuD1J@ec2-54-235-246-73.compute-1.amazonaws.com:5432/d5act6df4bhjuk')
+# ActiveRecord::Base.establish_connection('postgres://kczptvfljneali:nXpOWy8jaeZltPWpMeC-2DuD1J@ec2-54-235-246-73.compute-1.amazonaws.com:5432/d5act6df4bhjuk')
+ActiveRecord::Base.establish_connection('postgres://localhost/isitopen')
