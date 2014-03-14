@@ -3,8 +3,8 @@ class CheckIfOpen
 
 	def initialize(museum_id)
 		@museum = Museum.find(museum_id)
-		self.day_of_week = Time.now.to_date.strftime("%A").downcase
-		self.time_of_day = Time.now.strftime("%H:%M").gsub(":","").to_i
+		self.day_of_week = Time.now.localtime.to_date.strftime("%A").downcase
+		self.time_of_day = Time.now.localtime.strftime("%H:%M").gsub(":","").to_i
 		find_open_and_close
 	end
 
