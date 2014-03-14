@@ -17,6 +17,13 @@ class CreateMuseums < ActiveRecord::Migration
 			t.string :saturday_close
 			t.string :sunday_open
 			t.string :sunday_close
+			t.string :monday_sched
+			t.string :tuesday_sched
+			t.string :wednesday_sched
+			t.string :thursday_sched
+			t.string :friday_sched
+			t.string :saturday_sched
+			t.string :sunday_sched
 			t.text :url
 			t.timestamps
 		end

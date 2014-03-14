@@ -1,7 +1,13 @@
-
-<ul>
+<h1><%=@current_time%></h1>
 <%@museums.each do |museum|%>
-	<a href="<%=museum.url%>"><div><%=museum.name%> - <%=museum.current_status%></div></a>
+	<a href="<%=museum.url%>">
+		<div>
+			<h3><%=museum.name%></h3>
+			</br>
+			<h2><%=museum.current_status%></h2>
+			<br>
+			<p><%=museum.today_schedule%></p>
+		</div>
+	</a>
 <%end%>
-</ul>
 

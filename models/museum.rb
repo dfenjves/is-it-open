@@ -36,13 +36,15 @@ class Museum < ActiveRecord::Base
 		end
 		self.send("#{day.to_s}_open=", open)
 		self.send("#{day.to_s}_close=", close)
-		self.save
 	end
 
 	def save_weeks_data
 		week_hash.each do |day_name, schedule|
 			set_times(day_name)
+			self.send("#{day_name.to_s}_sched=", schedule)
+			puts "#{day_name}: #{schedule}"
 		end
+		self.save
 	end
 
 	def current_status
@@ -52,7 +54,11 @@ class Museum < ActiveRecord::Base
 		else
 			"Closed"
 		end
+	end
 
+	def today_schedule
+		today = Time.now.to_date.strftime("%A").downcase.to_sym
+		self.send("#{today}_sched")
 	end
 
 

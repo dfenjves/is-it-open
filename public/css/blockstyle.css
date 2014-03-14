@@ -54,7 +54,7 @@ h3 {
 	letter-spacing: -0.05em;
 }
 p {
-	font-size: 1.25em; 
+	font-size: 1.5em; 
 	line-height: 1.15;
 	margin: 0.75em 0;
 	color: #b9b8a4;
@@ -64,6 +64,15 @@ small {
 	color: #3b7cbf;
 }
 img { max-width: 100%; }
+
+a p {
+	display:none;
+}
+
+a:hover p {
+	display:block;
+
+}
 
 /* Media Queries */
 
@@ -88,8 +97,10 @@ img { max-width: 100%; }
 		top: 0;
 		overflow: hidden;
 	}
+
 	div, h2 { position: absolute; }
 }
+
 
 /* Two Column */
 
@@ -136,17 +147,17 @@ img { max-width: 100%; }
 }
 @media screen and (min-width:800px) {
 	h1, h2, h3 { font-size: 2.5em; }
-	p { font-size: 1em; }
+	p { font-size: 1.5em; }
 }
 @media screen and (min-width:1000px) {
 	h1, h2, h3 { font-size: 3.25em; }
-	p { font-size: 1.25em; }
+	p { font-size: 1.5em; }
 }
 @media screen and (min-width:1200px) {
-	p { font-size: 1em; }
+	p { font-size: 1.5em; }
 }
 @media screen and (min-width:1400px) {
-	p { font-size: 1.25em; }
+	p { font-size: 1.5em; }
 }
 @media screen and (min-width:1600px) {
 	h1, h2, h3 { font-size: 4em; }
