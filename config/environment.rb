@@ -1,7 +1,8 @@
 require 'bundler/setup'
 Bundler.require(:default)
-
+require 'open-uri'
 require 'time'
+require 'CSV'
 require_relative '../models/museum'
 require_relative '../models/yelp_scraper'
 require_relative '../models/db_populator'

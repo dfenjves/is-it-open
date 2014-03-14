@@ -10,9 +10,9 @@ gem 'sinatra-reloader'
 gem 'activerecord', :require => "active_record"
 # gem 'sqlite3'
 gem 'nokogiri'
-require 'open-uri'
+
 gem 'chronic'
 gem 'rspec'
-require 'CSV'
+
 gem 'sinatra-activerecord'
 gem 'pg'
