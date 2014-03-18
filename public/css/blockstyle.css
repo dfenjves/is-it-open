@@ -43,8 +43,14 @@ h1 {
 	line-height: 0.8;
 	letter-spacing: -0.05em;
 }
-h2 {
-	color: #d4d3c0;
+h2.Open {
+	color: #c2d4c0;
+	line-height: 0.9;
+	letter-spacing: -0.05em;
+	display: block
+}
+h2.Closed {
+	color: #d4c0c0;
 	line-height: 0.9;
 	letter-spacing: -0.05em;
 	display: block
@@ -74,6 +80,7 @@ a:hover p {
 	display:block;
 	padding-top: 20px;
 }
+
 
 /* Media Queries */
 
